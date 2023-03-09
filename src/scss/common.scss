@@ -1,0 +1,46 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: rem(12) rem(24);
+	background: linear-gradient(101.9deg, rgba(201, 34, 227, 0.4) 7.67%, rgba(153, 30, 234, 0.4) 52.66%, rgba(73, 23, 246, 0.4) 93.7%);
+	border-radius: rem(4);
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.8;
+			transform: translateY(2px);
+		}
+	}
+}
+
+.btn-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: rem(12) rem(24);
+	transition: all 0.3s ease 0s;
+	border: 2px solid transparent;
+	border-image: linear-gradient(#EA00AD, #8A40FF);
+	-moz-border-image: -moz-linear-gradient(#EA00AD, #8A40FF);
+	-webkit-border-image: -webkit-linear-gradient(#EA00AD, #8A40FF);
+	border-image-slice: 1;
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.8;
+			transform: translateY(2px);
+		}
+	}
+	
+}
+
+.title {
+	font-family: 'Ruda';
+	font-weight: 700;
+	@include adaptiveValue('font-size', 48, 30);
+	line-height: 120%;
+	text-align: center;
+	margin-bottom: rem(56);
+}
